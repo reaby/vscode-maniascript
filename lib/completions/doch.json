@@ -977,6 +977,26 @@
 					]
 				},
 				{
+					"name": "DegToRad",
+					"returns": "Real",
+					"params": [
+						{
+							"identifier": "Real",
+							"argument": "Argument1"
+						}
+					]
+				},
+				{
+					"name": "RadToDeg",
+					"returns": "Real",
+					"params": [
+						{
+							"identifier": "Real",
+							"argument": "Argument1"
+						}
+					]
+				},
+				{
 					"name": "Sin",
 					"returns": "Real",
 					"params": [
@@ -2254,7 +2274,7 @@
 					"Z"
 				]
 			}
-		},
+		},	
 		"CAchievementsAchievement": {
 			"inherit": "CNod",
 			"enums": {},
@@ -8532,6 +8552,7 @@
 					"EnableAirMapping",
 					"EnableCursorShowingWhenInterfaceIsFocused",
 					"EnableEditorInputsCustomProcessing",
+					"EnableMapTypeStartTest",
 					"EnableMixMapping",
 					"HideBlockHelpers",
 					"HideEditorInterface",
@@ -8747,6 +8768,20 @@
 					]
 				},
 				{
+					"name": "TestMapWithMode",
+					"returns": "Void",
+					"params": [
+						{
+							"identifier": "Text",
+							"argument": "RulesModeName"
+						},
+						{
+							"identifier": "Text",
+							"argument": "SettingsXml"
+						}
+					]
+				},
+				{
 					"name": "TestMapWithMode_SplitScreen",
 					"returns": "Void",
 					"params": [
@@ -8785,6 +8820,10 @@
 						{
 							"identifier": "Integer",
 							"argument": "FakeCount"
+						},
+						{
+							"identifier": "Text",
+							"argument": "SettingsXml"
 						}
 					]
 				},
@@ -18967,7 +19006,8 @@
 					"UiStuntsMode",
 					"UseClans",
 					"UseForcedClans",
-					"ValidationGhost_Show"
+					"ValidationGhost_Use",
+					"ValidationGhost_Visible"
 				],
 				"CTmModeEvent[]": [
 					"PendingEvents"
@@ -18990,6 +19030,9 @@
 				],
 				"ETmRaceChronoBehaviour": [
 					"UiRaceChrono"
+				],
+				"Ident": [
+					"ValidationGhost_Id"
 				],
 				"Integer": [
 					"Clan1Score",
