@@ -3,7 +3,7 @@
     "displayName": "ManiaScript",
     "icon": "images/ms.png",
     "description": "ManiaScript Language Support for vs code",
-    "version": "1.2.21",
+    "version": "1.2.22",
     "publisher": "mmcfarland",
     "repository": {
         "type": "git",
@@ -80,7 +80,7 @@
                 {
                     "type": ["null", "string"],
                     "default": null,
-                    "description": "You can set custom path to doc.h to parse autocompletions for ManiaScript API"
+                    "description": "You can set custom path to doc.h to parse completions for ManiaScript API"
                 }
             }
         }
