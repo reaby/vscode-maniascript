@@ -2229,15 +2229,12 @@
 		}
 	},
 	"primitives": [
-		"Boolean",
-		"Ident",
-		"Int3",
-		"Integer",
+        "Void",
+        "Integer",
 		"Real",
+		"Boolean",
 		"Text",
-		"Vec2",
-		"Vec3",
-		"Void"
+		"Ident"
 	],
 	"classes": {
 		"Vec2": {

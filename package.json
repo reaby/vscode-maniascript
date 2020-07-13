@@ -3,7 +3,7 @@
     "displayName": "ManiaScript",
     "icon": "images/ms.png",
     "description": "ManiaScript Language Support for vs code",
-    "version": "1.3.1",
+    "version": "1.3.2",
     "publisher": "mmcfarland",
     "repository": {
         "type": "git",
@@ -98,13 +98,20 @@
         "configuration": {
             "title": "ManiaScript",
             "properties": {
-                "conf.maniascript.apiDocPath": {
+                "maniascript.apidocPath": {
                     "type": [
                         "null",
                         "string"
                     ],
                     "default": null,
-                    "description": "You can set custom path to doc.h to parse completions for ManiaScript API"
+                    "description": "Path to doc.h for parsing latest completions from ManiaScript API"
+                },
+                "maniascript.useManiaplanetApi": {
+                    "type": [
+                        "boolean"
+                    ],
+                    "default": false,
+                    "description": "Set to use Maniaplanet doc.h format, othervice will use the new Trackmania api"
                 }
             }
         }
